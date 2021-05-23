@@ -1,0 +1,69 @@
+/* Base Css */
+:root {
+    --bg-white: #fff;
+    --bg-grey: #F0F0F2;
+    --bg-orange: #FFDCBE;
+    --bg-violet: #F0F2FF;
+    --text-dark: #1B113E;
+    --text-light: #3D3753;
+    --text-grey-light: #7B778D;
+}
+
+/* Selection Text */
+::selection {
+    background: var(--bg-orange);
+}
+::-moz-selection {
+    background:var(--bg-orange);
+} 
+::-webkit-selection {
+    background:var(--bg-orange);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    line-height: 1.6rem;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+    background: #F2F2F2;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+li {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+input,
+  button,
+  textarea,
+  select {
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+button {
+    cursor: pointer;
+    background-color: var(--bg-white);
+}
+
